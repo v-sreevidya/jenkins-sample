@@ -1,3 +1,6 @@
 @Library('jenkins-shared-libraries') _
 
-nodejsPipeline()
+nodejsPipeline(
+  imageName: 'jenkins-sample',
+  registry: 'docker.io/vsreevidya'
+)
